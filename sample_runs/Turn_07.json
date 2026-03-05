@@ -1,0 +1,76 @@
+{
+  "turn_number": 7,
+  "timestamp": "2026-03-05T16:56:10.940627",
+  "claim_state_before": {
+    "category": "collision",
+    "loss_datetime": "November 05, 2025",
+    "loss_location": {
+      "city": "Delhi",
+      "state": null,
+      "address": null,
+      "road_type": null
+    },
+    "vehicle": {
+      "make": null,
+      "model": null,
+      "year": null
+    },
+    "drivable": null,
+    "third_party_involved": true,
+    "third_party_vehicle_id": null,
+    "injuries_reported": true,
+    "police_report_filed": true,
+    "damage_areas": [],
+    "already_extracted_categories": [
+      "category",
+      "loss_datetime",
+      "loss_location",
+      "third_party_involved",
+      "injuries_reported",
+      "police_report_filed",
+      "under_influence",
+      "previous_claims",
+      "prior_claims_vehicle",
+      "prior_denial"
+    ],
+    "answered_question_ids": [
+      "Q0026",
+      "Q0030",
+      "Q0296",
+      "Q0246",
+      "Q0258",
+      "Q0297"
+    ],
+    "under_influence": false,
+    "previous_claims": false,
+    "prior_claims_vehicle": false,
+    "prior_denial": false
+  },
+  "question_presented": {
+    "id": "Q0007",
+    "text": "Can you provide the street address?",
+    "question_field": "loss_location.address",
+    "priority": 2,
+    "triggers": {
+      "incident_type": [
+        "collision"
+      ],
+      "required_fields_present": [
+        "loss_location.city"
+      ]
+    },
+    "targets": {
+      "fill_fields": [
+        "loss_location.address"
+      ]
+    },
+    "score": 2.5,
+    "score_breakdown": {
+      "priority": 0.8,
+      "gap_fill": 0.9,
+      "relevance": 0.8,
+      "fraud": 0.0
+    }
+  },
+  "user_input": "Rapur santoshi nagar"
+}

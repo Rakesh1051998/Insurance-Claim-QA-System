@@ -1,0 +1,59 @@
+{
+  "turn_number": 1,
+  "timestamp": "2026-03-05T16:53:55.683235",
+  "claim_state_before": {
+    "category": "collision",
+    "loss_datetime": "yesterday",
+    "loss_location": {
+      "city": "Delhi",
+      "state": null,
+      "address": null,
+      "road_type": null
+    },
+    "vehicle": {
+      "make": null,
+      "model": null,
+      "year": null
+    },
+    "drivable": null,
+    "third_party_involved": true,
+    "third_party_vehicle_id": null,
+    "injuries_reported": null,
+    "police_report_filed": null,
+    "damage_areas": [],
+    "already_extracted_categories": [
+      "category",
+      "loss_datetime",
+      "loss_location",
+      "third_party_involved"
+    ],
+    "answered_question_ids": []
+  },
+  "question_presented": {
+    "id": "Q0026",
+    "text": "Were there any injuries as a result of this collision?",
+    "question_field": "injuries_reported",
+    "priority": 1,
+    "triggers": {
+      "incident_type": [
+        "collision"
+      ],
+      "required_fields_present": [
+        "category"
+      ]
+    },
+    "targets": {
+      "fill_fields": [
+        "injuries_reported"
+      ]
+    },
+    "score": 2.7,
+    "score_breakdown": {
+      "priority": 1.0,
+      "gap_fill": 0.9,
+      "relevance": 0.8,
+      "fraud": 0.0
+    }
+  },
+  "user_input": "yes my leg got fractured"
+}

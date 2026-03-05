@@ -1,0 +1,70 @@
+{
+  "turn_number": 6,
+  "timestamp": "2026-03-05T16:55:56.995643",
+  "claim_state_before": {
+    "category": "collision",
+    "loss_datetime": "November 05, 2025",
+    "loss_location": {
+      "city": "Delhi",
+      "state": null,
+      "address": null,
+      "road_type": null
+    },
+    "vehicle": {
+      "make": null,
+      "model": null,
+      "year": null
+    },
+    "drivable": null,
+    "third_party_involved": true,
+    "third_party_vehicle_id": null,
+    "injuries_reported": true,
+    "police_report_filed": true,
+    "damage_areas": [],
+    "already_extracted_categories": [
+      "category",
+      "loss_datetime",
+      "loss_location",
+      "third_party_involved",
+      "injuries_reported",
+      "police_report_filed",
+      "under_influence",
+      "previous_claims",
+      "prior_claims_vehicle"
+    ],
+    "answered_question_ids": [
+      "Q0026",
+      "Q0030",
+      "Q0296",
+      "Q0246",
+      "Q0258"
+    ],
+    "under_influence": false,
+    "previous_claims": false,
+    "prior_claims_vehicle": false
+  },
+  "question_presented": {
+    "id": "Q0297",
+    "text": "Have you had your claim denied by another insurer?",
+    "question_field": "prior_denial",
+    "priority": 2,
+    "triggers": {
+      "required_fields_present": [
+        "category"
+      ]
+    },
+    "targets": {
+      "fill_fields": [
+        "prior_denial"
+      ]
+    },
+    "score": 2.6100000000000003,
+    "score_breakdown": {
+      "priority": 0.8,
+      "gap_fill": 0.9,
+      "relevance": 0.56,
+      "fraud": 0.35
+    }
+  },
+  "user_input": "NO"
+}

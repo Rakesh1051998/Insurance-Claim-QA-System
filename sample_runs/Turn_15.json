@@ -1,0 +1,100 @@
+{
+  "turn_number": 15,
+  "timestamp": "2026-03-05T16:58:08.370664",
+  "claim_state_before": {
+    "category": "collision",
+    "loss_datetime": "November 05, 2025",
+    "loss_location": {
+      "city": "Delhi",
+      "state": null,
+      "address": null,
+      "road_type": null
+    },
+    "vehicle": {
+      "make": null,
+      "model": null,
+      "year": null
+    },
+    "drivable": true,
+    "third_party_involved": true,
+    "third_party_vehicle_id": "CG07BH2024",
+    "injuries_reported": true,
+    "police_report_filed": true,
+    "damage_areas": [],
+    "already_extracted_categories": [
+      "category",
+      "loss_datetime",
+      "loss_location",
+      "third_party_involved",
+      "injuries_reported",
+      "police_report_filed",
+      "under_influence",
+      "previous_claims",
+      "prior_claims_vehicle",
+      "prior_denial",
+      "loss_location.address",
+      "third_party_contact",
+      "third_party_insurance",
+      "third_party_details_registration",
+      "third_party_plate",
+      "drivable",
+      "airbag_deployed",
+      "medical_visit",
+      "police_report_number"
+    ],
+    "answered_question_ids": [
+      "Q0026",
+      "Q0030",
+      "Q0296",
+      "Q0246",
+      "Q0258",
+      "Q0297",
+      "Q0007",
+      "Q0011",
+      "Q0012",
+      "Q0013",
+      "Q0021",
+      "Q0028",
+      "Q0029",
+      "Q0032"
+    ],
+    "under_influence": false,
+    "previous_claims": false,
+    "prior_claims_vehicle": false,
+    "prior_denial": false,
+    "loss_location.address": "Rapur santoshi nagar",
+    "third_party_contact": "232323232323",
+    "third_party_insurance": true,
+    "third_party_plate": "cg07bh2024",
+    "airbag_deployed": true,
+    "medical_visit": true,
+    "police_report_number": false
+  },
+  "question_presented": {
+    "id": "Q0034",
+    "text": "Were there any witnesses to the collision?",
+    "question_field": "witness_present",
+    "priority": 2,
+    "triggers": {
+      "incident_type": [
+        "collision"
+      ],
+      "required_fields_present": [
+        "category"
+      ]
+    },
+    "targets": {
+      "fill_fields": [
+        "witness_present"
+      ]
+    },
+    "score": 2.5,
+    "score_breakdown": {
+      "priority": 0.8,
+      "gap_fill": 0.9,
+      "relevance": 0.8,
+      "fraud": 0.0
+    }
+  },
+  "user_input": "yes my friend"
+}

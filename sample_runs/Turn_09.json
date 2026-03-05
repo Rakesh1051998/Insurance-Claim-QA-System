@@ -1,0 +1,80 @@
+{
+  "turn_number": 9,
+  "timestamp": "2026-03-05T16:56:41.878564",
+  "claim_state_before": {
+    "category": "collision",
+    "loss_datetime": "November 05, 2025",
+    "loss_location": {
+      "city": "Delhi",
+      "state": null,
+      "address": null,
+      "road_type": null
+    },
+    "vehicle": {
+      "make": null,
+      "model": null,
+      "year": null
+    },
+    "drivable": null,
+    "third_party_involved": true,
+    "third_party_vehicle_id": null,
+    "injuries_reported": true,
+    "police_report_filed": true,
+    "damage_areas": [],
+    "already_extracted_categories": [
+      "category",
+      "loss_datetime",
+      "loss_location",
+      "third_party_involved",
+      "injuries_reported",
+      "police_report_filed",
+      "under_influence",
+      "previous_claims",
+      "prior_claims_vehicle",
+      "prior_denial",
+      "loss_location.address",
+      "third_party_contact"
+    ],
+    "answered_question_ids": [
+      "Q0026",
+      "Q0030",
+      "Q0296",
+      "Q0246",
+      "Q0258",
+      "Q0297",
+      "Q0007",
+      "Q0011"
+    ],
+    "under_influence": false,
+    "previous_claims": false,
+    "prior_claims_vehicle": false,
+    "prior_denial": false,
+    "loss_location.address": "Rapur santoshi nagar",
+    "third_party_contact": "232323232323"
+  },
+  "question_presented": {
+    "id": "Q0012",
+    "text": "Do you have the other driver's insurance details?",
+    "question_field": "third_party_insurance",
+    "priority": 2,
+    "triggers": {
+      "incident_type": [
+        "collision"
+      ],
+      "third_party_involved": true
+    },
+    "targets": {
+      "fill_fields": [
+        "third_party_insurance"
+      ]
+    },
+    "score": 2.5,
+    "score_breakdown": {
+      "priority": 0.8,
+      "gap_fill": 0.9,
+      "relevance": 0.8,
+      "fraud": 0.0
+    }
+  },
+  "user_input": "yes"
+}

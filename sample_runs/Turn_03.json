@@ -1,0 +1,64 @@
+{
+  "turn_number": 3,
+  "timestamp": "2026-03-05T16:54:46.196371",
+  "claim_state_before": {
+    "category": "collision",
+    "loss_datetime": "yesterday",
+    "loss_location": {
+      "city": "Delhi",
+      "state": null,
+      "address": null,
+      "road_type": null
+    },
+    "vehicle": {
+      "make": null,
+      "model": null,
+      "year": null
+    },
+    "drivable": null,
+    "third_party_involved": true,
+    "third_party_vehicle_id": null,
+    "injuries_reported": true,
+    "police_report_filed": true,
+    "damage_areas": [],
+    "already_extracted_categories": [
+      "category",
+      "loss_datetime",
+      "loss_location",
+      "third_party_involved",
+      "injuries_reported",
+      "police_report_filed"
+    ],
+    "answered_question_ids": [
+      "Q0026",
+      "Q0030"
+    ]
+  },
+  "question_presented": {
+    "id": "Q0296",
+    "text": "Were you under the influence during the incident?",
+    "question_field": "under_influence",
+    "priority": 1,
+    "triggers": {
+      "incident_type": [
+        "collision"
+      ],
+      "required_fields_present": [
+        "category"
+      ]
+    },
+    "targets": {
+      "fill_fields": [
+        "under_influence"
+      ]
+    },
+    "score": 2.7,
+    "score_breakdown": {
+      "priority": 1.0,
+      "gap_fill": 0.9,
+      "relevance": 0.8,
+      "fraud": 0.0
+    }
+  },
+  "user_input": "no"
+}

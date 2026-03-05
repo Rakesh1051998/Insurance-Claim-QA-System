@@ -1,0 +1,143 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Vehicle Insurance Claim State Schema",
+  "type": "object",
+  "properties": {
+    "claim_id": {
+      "type": "string",
+      "description": "Unique identifier for the claim"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["collision", "fire", "theft", "flood", "vandalism", "unknown"],
+      "description": "Type of incident"
+    },
+    "loss_datetime": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "nullable": true,
+      "description": "When the incident occurred"
+    },
+    "loss_location": {
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": ["string", "null"],
+          "nullable": true
+        },
+        "state": {
+          "type": ["string", "null"],
+          "nullable": true
+        },
+        "address": {
+          "type": ["string", "null"],
+          "nullable": true
+        },
+        "road_type": {
+          "type": ["string", "null"],
+          "enum": ["urban", "highway", "rural", null],
+          "nullable": true
+        }
+      }
+    },
+    "third_party_involved": {
+      "type": ["boolean", "null"],
+      "nullable": true,
+      "description": "Whether another party was involved"
+    },
+    "injuries_reported": {
+      "type": ["boolean", "null"],
+      "nullable": true
+    },
+    "drivable": {
+      "type": ["boolean", "null"],
+      "nullable": true,
+      "description": "Is vehicle still drivable"
+    },
+    "damage_areas": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["front", "rear", "left_side", "right_side", "roof", "undercarriage", "interior", "windshield", "total"]
+      },
+      "default": []
+    },
+    "damage_severity": {
+      "type": ["string", "null"],
+      "enum": ["minor", "moderate", "severe", "total_loss", null],
+      "nullable": true
+    },
+    "police_report_filed": {
+      "type": ["boolean", "null"],
+      "nullable": true
+    },
+    "police_report_number": {
+      "type": ["string", "null"],
+      "nullable": true
+    },
+    "driver_at_fault": {
+      "type": ["boolean", "null"],
+      "nullable": true
+    },
+    "witness_present": {
+      "type": ["boolean", "null"],
+      "nullable": true
+    },
+    "witness_count": {
+      "type": ["integer", "null"],
+      "nullable": true
+    },
+    "airbag_deployed": {
+      "type": ["boolean", "null"],
+      "nullable": true
+    },
+    "vehicle_towed": {
+      "type": ["boolean", "null"],
+      "nullable": true
+    },
+    "repair_estimate_obtained": {
+      "type": ["boolean", "null"],
+      "nullable": true
+    },
+    "repair_estimate_amount": {
+      "type": ["number", "null"],
+      "nullable": true
+    },
+    "photos_available": {
+      "type": ["boolean", "null"],
+      "nullable": true
+    },
+    "photos_count": {
+      "type": ["integer", "null"],
+      "nullable": true
+    },
+    "rental_car_needed": {
+      "type": ["boolean", "null"],
+      "nullable": true
+    },
+    "fraud_indicators": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "already_extracted_categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Categories of information already extracted"
+    },
+    "answered_question_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "IDs of questions already asked"
+    }
+  },
+  "required": ["category", "answered_question_ids", "already_extracted_categories"]
+}

@@ -1,0 +1,64 @@
+{
+  "turn_number": 4,
+  "timestamp": "2026-03-05T16:55:04.582709",
+  "claim_state_before": {
+    "category": "collision",
+    "loss_datetime": "November 05, 2025",
+    "loss_location": {
+      "city": "Delhi",
+      "state": null,
+      "address": null,
+      "road_type": null
+    },
+    "vehicle": {
+      "make": null,
+      "model": null,
+      "year": null
+    },
+    "drivable": null,
+    "third_party_involved": true,
+    "third_party_vehicle_id": null,
+    "injuries_reported": true,
+    "police_report_filed": true,
+    "damage_areas": [],
+    "already_extracted_categories": [
+      "category",
+      "loss_datetime",
+      "loss_location",
+      "third_party_involved",
+      "injuries_reported",
+      "police_report_filed",
+      "under_influence"
+    ],
+    "answered_question_ids": [
+      "Q0026",
+      "Q0030",
+      "Q0296"
+    ],
+    "under_influence": false
+  },
+  "question_presented": {
+    "id": "Q0246",
+    "text": "Had you reported any previous claims on this vehicle?",
+    "question_field": "previous_claims",
+    "priority": 2,
+    "triggers": {
+      "required_fields_present": [
+        "category"
+      ]
+    },
+    "targets": {
+      "fill_fields": [
+        "previous_claims"
+      ]
+    },
+    "score": 2.6100000000000003,
+    "score_breakdown": {
+      "priority": 0.8,
+      "gap_fill": 0.9,
+      "relevance": 0.56,
+      "fraud": 0.35
+    }
+  },
+  "user_input": "no"
+}
